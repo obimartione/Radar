@@ -82,4 +82,33 @@ void loop() {
     noTone(piezoPin);
     delay(30);
   }
+  else if (distance <= 30 && distance > 20){
+    tone(piezoPin,notes[2]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else if (distance <= 20 && distance > 10){
+    tone(piezoPin,notes[3]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else {
+    tone(piezoPin,notes[4]);
+    delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+     
+  Serial.print(i);
+  Serial.print(",");
+  Serial.print(distance);
+  Serial.print(".");
   
+  }
+}
+
+
+
+
