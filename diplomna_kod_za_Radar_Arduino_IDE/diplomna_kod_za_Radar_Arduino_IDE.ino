@@ -19,3 +19,44 @@ void setup() {
   Serial.begin(9600);
   myServo.attach(12); 
 }
+
+void loop() {
+  
+  for(int i=15;i<=165;i++){  
+  myServo.write(i);
+
+  distance = calculateDistance();
+  
+
+  if(distance > 40){
+    noTone(piezoPin);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else if (distance <= 40 && distance > 30){
+    tone(piezoPin, notes[1]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else if (distance <= 30 && distance > 20){
+    tone(piezoPin,notes[2]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else if (distance <= 20 && distance > 10){
+    tone(piezoPin,notes[3]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else {
+    tone(piezoPin,notes[4]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+     
+      
