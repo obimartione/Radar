@@ -60,3 +60,10 @@ void loop() {
   }
      
       
+   Serial.print(i); 
+  Serial.print(",");
+  Serial.print(distance); 
+  Serial.print("."); 
+  }
+
+ 
