@@ -66,4 +66,20 @@ void loop() {
   Serial.print("."); 
   }
 
+  for(int i=165;i>15;i--){  
+  myServo.write(i);
  
+  distance = calculateDistance();
+  if(distance > 40){
+    noTone(piezoPin);
+    delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  else if (distance <= 40 && distance > 30){
+    tone(piezoPin, notes[1]);
+     delay(10);
+    noTone(piezoPin);
+    delay(30);
+  }
+  
