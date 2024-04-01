@@ -20,4 +20,20 @@
      myPort.bufferUntil('.'); 
      
     }
+
+    void draw() {
+      
+      fill(98,245,31);
+      
+      noStroke();
+      fill(0,4); 
+      rect(0, 0, width, height-height*0.065); 
+      
+      fill(98,245,31); 
+     
+      drawRadar(); 
+      drawLine();
+      drawObject();
+      drawText();
+    }
    
