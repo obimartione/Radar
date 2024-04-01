@@ -1,6 +1,6 @@
 # Arduino Radar Project
 
-Този проект представлява радар, базиран на платформата Arduino, който използва ултразвуков сензор за откриване на обекти в околната среда. Когато радарът засече предмет, свързаният бузер издава звуков сигнал, като предупреждение за потребителя.
+This project utilizes Arduino to create a radar system that detects objects and emits a sound signal through a buzzer when an object is detected. The radar system operates by sending out ultrasonic waves and measuring the time it takes for the waves to bounce back from nearby objects.
 
 ## Features
 
@@ -25,3 +25,29 @@
 1. Connect the components as per the circuit diagram provided in the project repository.
 2. Upload the Arduino sketch (code) to the Arduino board using the Arduino IDE.
 3. Power up the Arduino board.
+
+## Usage
+
+1. Turn on the radar system.
+2. The ultrasonic sensor continuously sends out ultrasonic waves.
+3. When an object is detected within the specified range, the buzzer emits a sound signal.
+4. The servo motor rotates the radar to scan the surrounding area.
+
+## Future Enhancements
+
+1. Integration with additional sensors for improved object detection accuracy.
+2. Implementation of data logging capabilities for recording detected objects.
+3. Development of a user interface for configuring radar settings.
+
+## Contributing
+
+Pull requests and contributions to improve the project are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+Inspired by Arduino projects and tutorials available online.
+Special thanks to the Arduino community for their support and resources.
