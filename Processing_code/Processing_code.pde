@@ -71,3 +71,10 @@
       line((-width/2)*cos(radians(30)),0,width/2,0);
       popMatrix();
     }
+
+    void drawObject() {
+      pushMatrix();
+      translate(width/2,height-height*0.074); 
+      strokeWeight(9);
+      stroke(255,10,10); 
+    }
