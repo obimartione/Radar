@@ -49,3 +49,11 @@
       iAngle = int(angle);
       iDistance = int(distance);
     }
+
+    void drawRadar() {
+      pushMatrix();
+      translate(width/2,height-height*0.074); 
+      noFill();
+      strokeWeight(2);
+      stroke(98,245,31);
+    }
