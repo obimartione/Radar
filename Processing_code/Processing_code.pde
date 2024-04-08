@@ -77,4 +77,11 @@
       translate(width/2,height-height*0.074); 
       strokeWeight(9);
       stroke(255,10,10); 
+       pixsDistance = iDistance*((height-height*0.1666)*0.025); 
+      
+      if(iDistance<40){
+       
+      line(pixsDistance*cos(radians(iAngle)),-pixsDistance*sin(radians(iAngle)),(width-width*0.505)*cos(radians(iAngle)),-(width-width*0.505)*sin(radians(iAngle)));
+      }
+      popMatrix();
     }
