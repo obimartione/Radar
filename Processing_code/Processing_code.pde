@@ -61,4 +61,13 @@
       arc(0,0,(width-width*0.27),(width-width*0.27),PI,TWO_PI);
       arc(0,0,(width-width*0.479),(width-width*0.479),PI,TWO_PI);
       arc(0,0,(width-width*0.687),(width-width*0.687),PI,TWO_PI);
+
+       line(-width/2,0,width/2,0);
+      line(0,0,(-width/2)*cos(radians(30)),(-width/2)*sin(radians(30)));
+      line(0,0,(-width/2)*cos(radians(60)),(-width/2)*sin(radians(60)));
+      line(0,0,(-width/2)*cos(radians(90)),(-width/2)*sin(radians(90)));
+      line(0,0,(-width/2)*cos(radians(120)),(-width/2)*sin(radians(120)));
+      line(0,0,(-width/2)*cos(radians(150)),(-width/2)*sin(radians(150)));
+      line((-width/2)*cos(radians(30)),0,width/2,0);
+      popMatrix();
     }
