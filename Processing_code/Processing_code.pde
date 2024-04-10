@@ -84,4 +84,12 @@
       line(pixsDistance*cos(radians(iAngle)),-pixsDistance*sin(radians(iAngle)),(width-width*0.505)*cos(radians(iAngle)),-(width-width*0.505)*sin(radians(iAngle)));
       }
       popMatrix();
+      void drawLine() {
+      pushMatrix();
+      strokeWeight(9);
+      stroke(30,250,60);
+      translate(width/2,height-height*0.074); 
+      line(0,0,(height-height*0.12)*cos(radians(iAngle)),-(height-height*0.12)*sin(radians(iAngle))); 
+      popMatrix();
+      }
     }
