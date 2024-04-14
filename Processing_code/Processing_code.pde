@@ -16,11 +16,10 @@
       
      size (1280, 720);
      smooth();
-     myPort = new Serial(this,"COM5", 9600); 
+     myPort = new Serial(this,"COM3", 9600); 
      myPort.bufferUntil('.'); 
      
     }
-
     void draw() {
       
       fill(98,245,31);
@@ -36,8 +35,7 @@
       drawObject();
       drawText();
     }
-   
-      void serialEvent (Serial myPort) { 
+    void serialEvent (Serial myPort) { 
       data = myPort.readStringUntil('.');
       data = data.substring(0,data.length()-1);
       
@@ -49,20 +47,19 @@
       iAngle = int(angle);
       iDistance = int(distance);
     }
-
     void drawRadar() {
       pushMatrix();
       translate(width/2,height-height*0.074); 
       noFill();
       strokeWeight(2);
       stroke(98,245,31);
-
+     
       arc(0,0,(width-width*0.0625),(width-width*0.0625),PI,TWO_PI);
       arc(0,0,(width-width*0.27),(width-width*0.27),PI,TWO_PI);
       arc(0,0,(width-width*0.479),(width-width*0.479),PI,TWO_PI);
       arc(0,0,(width-width*0.687),(width-width*0.687),PI,TWO_PI);
-
-       line(-width/2,0,width/2,0);
+      
+      line(-width/2,0,width/2,0);
       line(0,0,(-width/2)*cos(radians(30)),(-width/2)*sin(radians(30)));
       line(0,0,(-width/2)*cos(radians(60)),(-width/2)*sin(radians(60)));
       line(0,0,(-width/2)*cos(radians(90)),(-width/2)*sin(radians(90)));
@@ -71,13 +68,12 @@
       line((-width/2)*cos(radians(30)),0,width/2,0);
       popMatrix();
     }
-
     void drawObject() {
       pushMatrix();
       translate(width/2,height-height*0.074); 
       strokeWeight(9);
       stroke(255,10,10); 
-       pixsDistance = iDistance*((height-height*0.1666)*0.025); 
+      pixsDistance = iDistance*((height-height*0.1666)*0.025); 
       
       if(iDistance<40){
        
@@ -85,12 +81,12 @@
       }
       popMatrix();
     }
-      void drawLine() {
+    void drawLine() {
       pushMatrix();
       strokeWeight(9);
       stroke(30,250,60);
       translate(width/2,height-height*0.074); 
       line(0,0,(height-height*0.12)*cos(radians(iAngle)),-(height-height*0.12)*sin(radians(iAngle))); 
       popMatrix();
-      }
     }
+    
