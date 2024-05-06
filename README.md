@@ -17,9 +17,9 @@ This project utilizes Arduino to create a radar system that detects objects and 
 5. Jumper wires
 6. Breadboard
 
-
 ## Software Requirements
 - Arduino IDE
+- Processing
 
 ## Installation
 1. Connect the components as per the circuit diagram provided in the project repository.
@@ -38,14 +38,13 @@ This project utilizes Arduino to create a radar system that detects objects and 
 1. Integration with additional sensors for improved object detection accuracy.
 2. Implementation of data logging capabilities for recording detected objects.
 3. Development of a user interface for configuring radar settings.
+4. Development of adaptability and self-learning algorithms can allow the radar to adapt to different environmental conditions and improve its object recognition capabilities.
+5. Working on a smaller and lighter design can make the radar more portable and convenient for the visually impaired to carry.
+6. Radar integration with IoT technologies can enable remote control and monitoring via the Internet, Bluetooth, as well as data exchange and interaction with other devices and systems.
 
 ## Contributing
 
 Pull requests and contributions to improve the project are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgements
 
